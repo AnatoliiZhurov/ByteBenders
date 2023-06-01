@@ -1999,27 +1999,168 @@
 
     <!-- Оксана -->
     <div class="modalbynow overlay js-overlay-modal">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aspernatur
-    corrupti totam in enim officia asperiores non, dolorem nam quisquam facere a
-    et atque. Adipisci quasi ipsam quisquam beatae sed.
-  </p>
+  <button class="modal-btn" type="button" data-modal-close>
+    <svg class="modal-icon" width="12" height="12">
+      <use href=""></use>
+    </svg>
+  </button>
+  <div class="modal">
+    <h1 class="modal-title">
+      <span class="modal-title-accent">BUY</span>NOW
+    </h1>
+    <ul class="modal-list list">
+      <li class="modal-item">
+        <img class="modal-img" src="" alt="" width="" height="" />
+        <p class="modal-text">100 g</p>
+      </li>
+      <li class="modal-item">
+        <img class="modal-img" src="" alt="" width="" height="" />
+        <p class="modal-text">200 g</p>
+      </li>
+      <li class="modal-item">
+        <img class="modal-img" src="" alt="" width="" height="" />
+        <p class="modal-text">300 g</p>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-field">
+    <form class="modal-form" name="contacts_form">
+      <label class="form-label"
+        >Personal information
+        <div class="form-input-name">
+          <input
+            class="form-input"
+            type="text"
+            name="user_name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="form-input"
+            type="text"
+            name="user_surname"
+            placeholder="Surname"
+            required
+          />
+        </div> </label
+      ><label class="form-label" for="email">Email</label
+      ><input
+        class="form-input"
+        type="email"
+        name="user_email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label class="form-label" for="tel">Phone number</label>
+      <div class="form-field">
+        <input
+          class="form-input"
+          type="tel"
+          name="user_phone"
+          id="tel"
+          placeholder="Phone number"
+          required
+        />
+        <svg class="form-icon-tel" width="24" height="24">
+          <use href=""></use>
+        </svg>
+      </div>
+      <label class="form-label" for="card">Card number</label>
+      <div class="form-field">
+        <input
+          class="form-input"
+          type="number"
+          name="user_card"
+          id="card"
+          placeholder="Enter card"
+          required
+        />
+        <svg class="form-icon-card" width="32" height="21">
+          <use href=""></use>
+        </svg>
+      </div>
+      <label for="comment" class="form-label">Comment</label
+      ><textarea
+        class="form-comment"
+        name="comment"
+        id="comment"
+        rows="6"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="form-btn" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
 
     <div class="modalreview overlay js-overlay-modal">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aspernatur
-    corrupti totam in enim officia asperiores non, dolorem nam quisquam facere a
-    et atque. Adipisci quasi ipsam quisquam beatae sed.
-  </p>
+  <button class="modal-btn" type="button" data-modal-close>
+    <svg class="modal-icon" width="12" height="12">
+      <use href=""></use>
+    </svg>
+  </button>
+  <div class="modal">
+    <h1 class="modal-title">
+      LEAVE A REVIEW ABOUT
+      <span class="modal-title-accent">OUR CHOCOLATE</span>
+    </h1>
+    <form class="modal-form" name="review_form">
+      <input
+        class="modal-input"
+        type="text"
+        name="user_name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="modal-input"
+        type="email"
+        name="user_email"
+        placeholder="Enter your email"
+        required
+      />
+      <!-- <label class="form-label" for="tel"></label> -->
+      <div class="form-field">
+        <input
+          class="modal-input"
+          type="tel"
+          name="user_phone"
+          id="tel"
+          placeholder="Phone number"
+          required
+        />
+        <svg class="form-icon-tel" width="24" height="24">
+          <use href=""></use>
+        </svg>
+      </div>
+      <textarea
+        class="form-comment"
+        name="comment"
+        rows="6"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="form-btn" type="submit">Send</button>
+    </form>
+  </div>
 </div>
 
     <div class="modalexplore overlay js-overlay-modal">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aspernatur
-    corrupti totam in enim officia asperiores non, dolorem nam quisquam facere a
-    et atque. Adipisci quasi ipsam quisquam beatae sed.
-  </p>
+  <button class="modal-btn" type="button" data-modal-close>
+    <svg class="modal-icon" width="12" height="12">
+      <use href=""></use>
+    </svg>
+  </button>
+  <h1>EXPLORE OUR <span class="modal-title-accent">NEW CHOCOLATE</span> FIRST!</h1>
+  <form class="modal-form" name="email_form">
+    <input
+      class="form-input"
+      type="email"
+      name="user_email"
+      placeholder="Enter your email"
+      required
+    />
+    <button class="form-btn" type="submit">Submit</button>
+  </form>
 </div>
 
 
