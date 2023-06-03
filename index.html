@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/bytebenders/assets/index-d9498932.js"></script>
-    <link rel="stylesheet" href="/bytebenders/assets/index-8d69b6d8.css">
+    <link rel="stylesheet" href="/bytebenders/assets/index-c93d6735.css">
   </head>
   <body>
     <!-- Ігор -->
@@ -454,9 +454,21 @@
         <img
           id="preview-image"
           class="choco-pick"
+          srcset="
+            ../img/manufacture/image_mob335.jpg    335w,
+            ../img/manufacture/image_mob670.jpg    670w,
+            ../img/manufacture/image_tab614.jpg    614w,
+            ../img/manufacture/image_tab1228.jpg  1228w,
+            ../img/manufacture/image_desk600.jpg   600w,
+            ../img/manufacture/image_desk1200.jpg 1200w
+          "
+          sizes="(min-width:1200px) 600px, (min-width:768px) 614px, (min-width:428px) 375px, 100vw"
           src="../img/manufacture/image_mob335.jpg"
           alt="chocolate"
         />
+        <svg class="icon-play" width="35" height="35">
+          <use href="../img/icons.svg#icon-play"></use>
+        </svg>
       </div>
 
       <div class="manufacture-blocks">
@@ -487,6 +499,29 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var videoIframe = document.querySelector('.video iframe');
+    var previewImage = document.getElementById('preview-image');
+    // Обробник події для відео
+    videoIframe.addEventListener('click', function () {
+      this.contentWindow.postMessage(
+        '{"event":"command","func":"playVideo","args":""}',
+        '*'
+      );
+      previewImage.style.display = 'none';
+    });
+    // Обробник події для картинки
+    previewImage.addEventListener('click', function () {
+      videoIframe.contentWindow.postMessage(
+        '{"event":"command","func":"playVideo","args":""}',
+        '*'
+      );
+      this.style.display = 'none';
+    });
+  });
+</script>
 
       <!-- Софія -->
       <section class="products" id="our_products">
