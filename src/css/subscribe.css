@@ -4,13 +4,19 @@
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  max-width: 375px;
+  height: 370px;
+  padding: 62px 0 63px 0;
 }
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px)
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    max-width: 768px;
+    padding: 72px 0;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) and (max-width: 375px)
  {
   .subscribe {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -67,46 +73,54 @@ max-width: 320px;
   color: #FD9222;
 }
 @media screen and (min-width: 768px) {
-  .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subcribe/subcribe-tab.jpg);
-  }
-
   .subcribe-tittle {
     max-width: 378px;
     font-size: 24px;
     line-height: 1.16;
     margin-bottom: 24px;
   }
-  .subcribe-text{
+
+  .subcribe-text {
     max-width: 467px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px)
- {
+@media screen and (min-width: 376px) {
   .subscribe {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/subcribe/subcribe-tab2x.jpg);
+      url(../img/subcribe/subcribe-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../img/subcribe/subcribe-tab2x.jpg);
+    }
   }
 }
+
+@media screen and (min-width: 769px) {
+  .subscribe {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/subcribe/Subcribe.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../img/subcribe/Subcribe@2x.jpg);
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subcribe/Subcribe.jpg);
-  }
-
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px)
- {
-  .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/subcribe/Subcribe@2x.jpg);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
