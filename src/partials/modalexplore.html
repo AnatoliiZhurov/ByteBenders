@@ -1,7 +1,7 @@
-<div class="modalexplore overlay js-overlay-modal">
-  <button class="modal-btn" type="button" data-modal-close>
-    <svg class="modal-icon" width="12" height="12">
-      <use href=""></use>
+<div class="modalexplore overlay js-overlay-modal" data-modal="3">
+  <button class="modal-btn" type="button" js-modal-close>
+    <svg class="modal-icon" width="24" height="24">
+      <use href="../img/icons.svg#icon-x-close-white"></use>
     </svg>
   </button>
   <h1>EXPLORE OUR <span class="modal-title-accent">NEW CHOCOLATE</span> FIRST!</h1>
@@ -11,8 +11,8 @@
       type="email"
       name="user_email"
       placeholder="Enter your email"
-      required
+      pattern=""
     />
-    <button class="form-btn" type="submit">Submit</button>
+    <button class="form-btn" type="submit" js-modal-close>Submit</button>
   </form>
 </div>

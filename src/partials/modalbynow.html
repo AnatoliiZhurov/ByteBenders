@@ -1,7 +1,7 @@
-<div class="modalbynow overlay js-overlay-modal">
-  <button class="modal-btn" type="button" data-modal-close>
-    <svg class="modal-icon" width="12" height="12">
-      <use href=""></use>
+<div class="modalbynow overlay js-overlay-modal" data-modal="1">
+  <button class="modal-btn" type="button" js-modal-close>
+    <svg class="modal-icon" width="24" height="24">
+      <use href="../img/icons.svg#icon-x-close"></use>
     </svg>
   </button>
   <div class="modal">
@@ -33,14 +33,14 @@
             type="text"
             name="user_name"
             placeholder="Name"
-            required
+            pattern=""
           />
           <input
             class="form-input"
             type="text"
             name="user_surname"
             placeholder="Surname"
-            required
+            pattern=""
           />
         </div> </label
       ><label class="form-label" for="email">Email</label
@@ -50,7 +50,7 @@
         name="user_email"
         id="email"
         placeholder="Enter your email"
-        required
+        pattern=""
       />
       <label class="form-label" for="tel">Phone number</label>
       <div class="form-field">
@@ -60,10 +60,11 @@
           name="user_phone"
           id="tel"
           placeholder="Phone number"
-          required
+          pattern=""
+         
         />
         <svg class="form-icon-tel" width="24" height="24">
-          <use href=""></use>
+          <use href="../img/icons.svg#icon-flag-group"></use>
         </svg>
       </div>
       <label class="form-label" for="card">Card number</label>
@@ -74,10 +75,10 @@
           name="user_card"
           id="card"
           placeholder="Enter card"
-          required
+          pattern=""
         />
         <svg class="form-icon-card" width="32" height="21">
-          <use href=""></use>
+          <use href="../img/icons.svg#icon-mastercard"></use>
         </svg>
       </div>
       <label for="comment" class="form-label">Comment</label
@@ -88,7 +89,7 @@
         rows="6"
         placeholder="Enter text"
       ></textarea>
-      <button class="form-btn" type="submit">Submit</button>
+      <button class="form-btn" type="submit" js-modal-close>Submit</button>
     </form>
   </div>
 </div>
