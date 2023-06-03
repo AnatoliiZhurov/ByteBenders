@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/bytebenders/assets/index-d9498932.js"></script>
-    <link rel="stylesheet" href="/bytebenders/assets/index-0ea78884.css">
+    <link rel="stylesheet" href="/bytebenders/assets/index-1f7b42a5.css">
   </head>
   <body>
     <!-- Ігор -->
@@ -1059,108 +1059,125 @@
 
     <!-- Оксана -->
     <div class="modalbynow overlay js-overlay-modal" data-modal="1">
-  <button class="modal-btn" type="button" js-modal-close>
-    <svg class="modal-icon" width="24" height="24">
-      <use href="../img/icons.svg#icon-x-close"></use>
-    </svg>
-  </button>
   <div class="modal">
-    <h1 class="modal-title">
-      <span class="modal-title-accent">BUY</span>NOW
-    </h1>
-    <ul class="modal-list list">
-      <li class="modal-item">
-        <img class="modal-img" src="" alt="" width="" height="" />
-        <p class="modal-text">100 g</p>
-      </li>
-      <li class="modal-item">
-        <img class="modal-img" src="" alt="" width="" height="" />
-        <p class="modal-text">200 g</p>
-      </li>
-      <li class="modal-item">
-        <img class="modal-img" src="" alt="" width="" height="" />
-        <p class="modal-text">300 g</p>
-      </li>
-    </ul>
-  </div>
-  <div class="modal-field">
-    <form class="modal-form" name="contacts_form">
-      <label class="form-label"
-        >Personal information
-        <div class="form-input-name">
-          <input
+    <button class="modal-btn" type="button" js-modal-close>
+      <svg class="modal-icon" width="24" height="24">
+        <use href="../img/icons.svg#close-modal"></use>
+      </svg>
+    </button>
+    <div class="modal-field">
+      <h1 class="modal-title">
+        <span class="modal-title-accent">BUY </span>NOW
+      </h1>
+      <ul class="modal-list">
+        <li class="modal-item">
+          <img
+            class="modal-img"
+            src="../img/modal/chocolate-1-mob@1x.png"
+            alt="chocolate-100"
+            width="84"
+            height="69"
+          />
+          <button class="modal-order-btn">100 g</button>
+        </li>
+        <li class="modal-item">
+          <img
+            class="modal-img"
+            src="../img/modal/chocolate-2-mob@1x.png"
+            alt="chocolate-200"
+            width="84"
+            height="69"
+          />
+          <button class="modal-order-btn">200 g</button>
+        </li>
+        <li class="modal-item">
+          <img
+            class="modal-img"
+            src="../img/modal/chocolate-3-mob@1x.png"
+            alt="chocolate-300"
+            width="84"
+            height="69"
+          />
+          <button class="modal-order-btn">300 g</button>
+        </li>
+      </ul>
+      <div class="modal-field-form">
+        <form class="modal-form" name="contacts_form">
+          <label class="form-label-name form-label"
+            >Personal information
+            <input
+              class="form-input"
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              pattern=""
+            />
+            <input
+              class="form-input"
+              type="text"
+              name="user_surname"
+              placeholder="Surname"
+              pattern=""
+            /> </label
+          ><label class="form-label" for="email">Email</label
+          ><input
             class="form-input"
-            type="text"
-            name="user_name"
-            placeholder="Name"
+            type="email"
+            name="user_email"
+            id="email"
+            placeholder="Enter your email"
             pattern=""
           />
-          <input
-            class="form-input"
-            type="text"
-            name="user_surname"
-            placeholder="Surname"
-            pattern=""
-          />
-        </div> </label
-      ><label class="form-label" for="email">Email</label
-      ><input
-        class="form-input"
-        type="email"
-        name="user_email"
-        id="email"
-        placeholder="Enter your email"
-        pattern=""
-      />
-      <label class="form-label" for="tel">Phone number</label>
-      <div class="form-field">
-        <input
-          class="form-input"
-          type="tel"
-          name="user_phone"
-          id="tel"
-          placeholder="Phone number"
-          pattern=""
-         
-        />
-        <svg class="form-icon-tel" width="24" height="24">
-          <use href="../img/icons.svg#icon-flag-group"></use>
-        </svg>
+          <label class="form-label" for="tel">Phone number</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              name="user_phone"
+              id="tel"
+              placeholder="Phone number"
+              pattern=""
+            />
+            <svg class="form-icon-tel" width="24" height="24">
+              <use href="../img/icons.svg#icon-flag-icon"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="card">Card number</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="number"
+              name="user_card"
+              id="card"
+              placeholder="Enter card"
+              pattern=""
+            />
+            <svg class="form-icon-card" width="32" height="21">
+              <use href="../img/icons.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+          <label for="comment" class="form-label">Comment</label
+          ><textarea
+            class="form-comment"
+            name="comment"
+            id="comment"
+            rows="6"
+            placeholder="Enter text"
+          ></textarea>
+          <button class="form-btn" type="submit" js-modal-close>Submit</button>
+        </form>
       </div>
-      <label class="form-label" for="card">Card number</label>
-      <div class="form-field">
-        <input
-          class="form-input"
-          type="number"
-          name="user_card"
-          id="card"
-          placeholder="Enter card"
-          pattern=""
-        />
-        <svg class="form-icon-card" width="32" height="21">
-          <use href="../img/icons.svg#icon-mastercard"></use>
-        </svg>
-      </div>
-      <label for="comment" class="form-label">Comment</label
-      ><textarea
-        class="form-comment"
-        name="comment"
-        id="comment"
-        rows="6"
-        placeholder="Enter text"
-      ></textarea>
-      <button class="form-btn" type="submit" js-modal-close>Submit</button>
-    </form>
+    </div>
   </div>
 </div>
 
     <div class="modalreview overlay js-overlay-modal" data-modal="2">
+  <div class="modal">
   <button class="modal-btn" type="button" js-modal-close>
     <svg class="modal-icon" width="24" height="24">
-      <use href="../img/icons.svg#icon-x-close"></use>
+      <use href="../img/icons.svg#close-modal"></use>
     </svg>
   </button>
-  <div class="modal">
     <h1 class="modal-title">
       LEAVE A REVIEW ABOUT
       <span class="modal-title-accent">OUR CHOCOLATE</span>
@@ -1191,7 +1208,7 @@
           pattern=""
         />
         <svg class="form-icon-tel" width="24" height="24">
-          <use href="../img/icons.svg#icon-flag-group"></use>
+          <use href="../img/icons.svg#icon-flag-icon"></use>
         </svg>
       </div>
       <textarea
@@ -1206,22 +1223,26 @@
 </div>
 
     <div class="modalexplore overlay js-overlay-modal" data-modal="3">
-  <button class="modal-btn" type="button" js-modal-close>
-    <svg class="modal-icon" width="24" height="24">
-      <use href="../img/icons.svg#icon-x-close-white"></use>
-    </svg>
-  </button>
-  <h1>EXPLORE OUR <span class="modal-title-accent">NEW CHOCOLATE</span> FIRST!</h1>
-  <form class="modal-form" name="email_form">
-    <input
-      class="form-input"
-      type="email"
-      name="user_email"
-      placeholder="Enter your email"
-      pattern=""
-    />
-    <button class="form-btn" type="submit" js-modal-close>Submit</button>
-  </form>
+ <div class="modal">
+    <button class="modal-btn" type="button" js-modal-close>
+      <svg class="modal-icon" width="24" height="24">
+        <use href="../img/icons.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h1>
+      EXPLORE OUR <span class="modal-title-accent">NEW CHOCOLATE</span> FIRST!
+    </h1>
+    <form class="modal-form" name="email_form">
+      <input
+        class="form-input"
+        type="email"
+        name="user_email"
+        placeholder="Enter your email"
+        pattern=""
+      />
+      <button class="form-btn" type="submit" js-modal-close>Submit</button>
+    </form>
+ </div>
 </div>
 
 
