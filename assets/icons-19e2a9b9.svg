@@ -79,10 +79,6 @@
         d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z">
       </path>
     </symbol>
-    <symbol id="icon-x-close-white" viewBox="0 0 3fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" s2 32">
-      <path troke-linejoin="round" stroke-linecap="round"
-        stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
-    </symbol>
     </defs>
 </svg>
 
