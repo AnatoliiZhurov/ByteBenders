@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/bytebenders/assets/index-d9498932.js"></script>
-    <link rel="stylesheet" href="/bytebenders/assets/index-9a228b44.css">
+    <link rel="stylesheet" href="/bytebenders/assets/index-1efb5858.css">
   </head>
   <body>
     <!-- Ігор -->
@@ -447,7 +447,7 @@
           alt="chocolate"
         />
         <svg
-          id="preview-image"
+          id="my-svg-icon"
           preview-image
           class="icon-play"
           width="35"
@@ -490,22 +490,26 @@
   document.addEventListener('DOMContentLoaded', function () {
     var videoIframe = document.querySelector('.video iframe');
     var previewImage = document.getElementById('preview-image');
-    // Обробник події для відео
-    videoIframe.addEventListener('click', function () {
-      this.contentWindow.postMessage(
-        '{"event":"command","func":"playVideo","args":""}',
-        '*'
-      );
-      previewImage.style.display = 'none';
-    });
-    // Обробник події для картинки
-    previewImage.addEventListener('click', function () {
+    var svgIcon = document.getElementById('my-svg-icon');
+
+    // Обробник події для відео та картинки
+    function handleEvent() {
       videoIframe.contentWindow.postMessage(
         '{"event":"command","func":"playVideo","args":""}',
         '*'
       );
-      this.style.display = 'none';
-    });
+      previewImage.style.display = 'none';
+      svgIcon.style.display = 'none';
+    }
+
+    // Додати обробник події до відео
+    videoIframe.addEventListener('click', handleEvent);
+
+    // Додати обробник події до картинки
+    previewImage.addEventListener('click', handleEvent);
+
+    // Додати обробник події до svg-іконки
+    svgIcon.addEventListener('click', handleEvent);
   });
 </script>
 
