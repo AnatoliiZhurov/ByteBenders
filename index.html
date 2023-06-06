@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/bytebenders/assets/index-82ed7389.js"></script>
-    <link rel="stylesheet" href="/bytebenders/assets/index-72ea9602.css">
+    <link rel="stylesheet" href="/bytebenders/assets/index-bd878140.css">
   </head>
   <body>
     <!-- Ігор -->
@@ -993,27 +993,28 @@
       </ul>
       <div class="modal-field-form">
         <form class="modal-form" name="contacts_form">
-          <label class="form-label-name form-label"
-            >Personal information
-            <div class="form-input-name">
-              <input
-                class="form-input"
-                type="text"
-                name="user_name"
-                placeholder="Name"
-                pattern="[A-Za-z]{1,}"
-                required
-              />
-              <input
-                class="form-input"
-                type="text"
-                name="user_surname"
-                placeholder="Surname"
-                pattern="[A-Za-z]{1,}"
-                required
-              />
-            </div>
-          </label>
+          <label class="form-label-name form-label" for="name"
+            >Personal information</label
+          >
+          <div class="form-input-name">
+            <input
+              class="form-input"
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder="Name"
+              pattern="[A-Za-z]{1,}"
+              required
+            />
+            <input
+              class="form-input"
+              type="text"
+              name="user_surname"
+              placeholder="Surname"
+              pattern="[A-Za-z]{1,}"
+              required
+            />
+          </div>
           <label class="form-label" for="email">Email</label>
           <div class="form-field-email">
             <input
@@ -1059,7 +1060,7 @@
               <use href="/bytebenders/assets/icons-19e2a9b9.svg#icon-mastercard"></use>
             </svg>
           </div>
-          <label for="comment" class="form-label">Comment</label
+          <label class="form-label" for="comment">Comment</label
           ><textarea
             class="form-comment"
             name="comment"
@@ -1110,7 +1111,6 @@
             class="modalreview-input modalreview-input-tel"
             type="tel"
             name="user_phone"
-            id="tel"
             placeholder="Phone number"
             pattern="[0-9]{9}"
             required
